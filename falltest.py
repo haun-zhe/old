@@ -12,7 +12,7 @@ import base64
 import threading
 
 import imutils
-# from keras.models import load_model
+from keras.models import load_model
 from keras.preprocessing.image import img_to_array
 import numpy as np
 import os
@@ -68,7 +68,7 @@ def run1():
 
 
 result = {"skeletons": []}
-
+print('[INFO] 开始检测是否有人摔倒...')
 # speed
 speeda = 0
 acceleration = -1

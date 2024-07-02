@@ -248,7 +248,9 @@ def fence_main():
 
     # 摄像头或视频文件
     print("[INFO] starting video stream...")
-    vs = cv2.VideoCapture(0)
+    # vs = cv2.VideoCapture(0)
+    url = 'rtsp://admin:123@192.168.0.107:8554/live'
+    vs = cv2.VideoCapture(url)
     # 加载物体识别模型
     print("[INFO] loading model...")
     raw_q = multiprocessing.Queue(100)
